@@ -26,10 +26,11 @@ def draw():
     paddle(mouseX,480,80,120)
     if xPos > 485 or xPos < 5:
         xSpeed *= -1
-    if yPos > 485 or yPos < 5:
+    if yPos < 5:
         ySpeed *= -1
     if ellipse > 475 and ellipse < 480:
         ySpeed *= -4
-if 490 > mouseX and 10 < mouseY:
-        ySpeed
+    if yPos >= 470:
+        if xPos > mouseX and xPos < mouseX + 100:
+            ySpeed = ySpeed *-1
     
